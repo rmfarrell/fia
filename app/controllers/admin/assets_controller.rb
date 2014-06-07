@@ -4,17 +4,11 @@ class Admin::AssetsController < ApplicationController
     @assets = Asset.all
   end
   
-  def create
-    @asset = Asset.new(asset_params)
-    
-    if @asset.save
-      redirect_to @asset
-    else
-      render 'new'
-    end
-  end
-  
   def edit
+    @asset = Asset.find(params[:id])
+  end
+
+  def show
     @asset = Asset.find(params[:id])
   end
   
