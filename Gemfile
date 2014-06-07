@@ -5,6 +5,8 @@ gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
 # Use pg in production
+# could not get pg to work locally
+# steps on how to replicate here http://jgtr.github.io/blog/2013/07/28/deploying-a-sqlite3-database-to-heroku-for-production-using-postgres/
 group :development do
   gem 'sqlite3'
 end
