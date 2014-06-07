@@ -8,43 +8,15 @@ class AssetsController < ApplicationController
     @asset = Asset.find(params[:id])
   end
   
-  def create
-    @asset = Asset.new(asset_params)
-    
-    if @asset.save
-      redirect_to @asset
-    else
-      render 'new'
-    end
+  def new
+    redirect_to '/'
   end
   
   def edit
-    @asset = Asset.find(params[:id])
-  end
-  
-  def update
-    @asset = Asset.find(params[:id])
-    
-    if @asset.update(asset_params)
-      redirect_to @asset
-    else
-      render 'edit'
-    end
-  end
-  
-  def new
-    @asset = Asset.new
+    redirect_to '/'
   end
   
   def destroy
-    @asset = Asset.find(params[:id])
-    @asset.destroy
-      
-    redirect_to assets_path
+    redirect_to '/'
   end
-  
-  private
-    def asset_params
-      params.require(:asset).permit(:title, :text)
-    end
 end
