@@ -34,7 +34,7 @@ test:
 
 production:
   adapter: postgresql
-  database: HEROKU_POSTGRESQL_PURPLE
-  username: username
-  password: password
+  database: d4is93b4571q2j
+  username: dtjaysfjavvhal
+  password: DCZLDirf7_JdY65I9AK5N2mthn
   host: localhost
