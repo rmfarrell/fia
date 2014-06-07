@@ -1,0 +1,15 @@
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+ 
+  <% @assets.each do |a| %>
+    <tr>
+			<td><%= link_to a.title, a %></td>
+      <td><%= a.text %></td>
+			<td><%= link_to 'edit', edit_asset_path(a) %></td>
+			<td><%= link_to 'delete', asset_path(a), method: :delete, data:{confirm: 'are you sure?'} %></td>
+    </tr>
+  <% end %>
+</table>
