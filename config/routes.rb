@@ -9,6 +9,8 @@ Fia::Application.routes.draw do
     resources :assets
   end
   
+  get '/admin/', to: 'admin/assets#index'
+  
   # You can have the root of your site routed with "root"
   root 'assets#index'
 
