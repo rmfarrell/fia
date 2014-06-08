@@ -63122,3 +63122,3123 @@ Processing by Admin::ResourcesController#edit as HTML
   Rendered admin/resources/_form.html.erb (6.7ms)
   Rendered admin/resources/edit.html.erb within layouts/application (7.6ms)
 Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:18:40 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.1ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:18:40 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:18:40 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:18:40 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:18:40 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:18:40 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:18:40 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:18:40 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:18:40 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:18:40 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:18:40 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:18:40 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:18:40 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:18:40 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:18:40 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:18:40 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:18:49 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mResource Load (0.1ms)[0m  SELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:18:49 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:18:49 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:18:49 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:18:49 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:18:49 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:18:49 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:18:49 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:18:49 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:18:49 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:18:49 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:18:49 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:18:49 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:18:49 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:18:49 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:18:49 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:20:13 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.1ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:20:13 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:20:13 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:20:13 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:20:13 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:20:13 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:20:13 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:20:13 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:20:13 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:20:13 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:20:13 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:20:13 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:20:13 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:20:13 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:20:13 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:20:13 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:20:13 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:20:13 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:20:13 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:20:13 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:20:13 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:20:13 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:20:13 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:20:13 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:21:03 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mResource Load (0.1ms)[0m  SELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:03 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:03 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:03 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:03 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:03 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:03 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:03 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:03 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:03 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:03 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:03 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:03 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:03 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:03 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:03 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:03 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:03 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:03 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:03 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:03 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:03 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:03 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:03 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.1ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mResource Load (0.1ms)[0m  SELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.1ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:04 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:21:11 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mResource Load (0.1ms)[0m  SELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:12 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:12 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:12 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:12 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:12 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:12 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:12 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:12 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:12 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:12 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:12 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:12 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:12 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:12 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:12 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:12 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:12 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:12 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:12 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:12 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:12 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:21:25 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.1ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:25 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:25 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:25 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:25 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:25 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:21:25 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:25 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:25 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:25 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:25 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:26 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:26 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:26 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:26 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:21:26 -0400
+
+
+Started GET "/admin/resources" for 127.0.0.1 at 2014-06-08 01:21:27 -0400
+Processing by Admin::ResourcesController#index as HTML
+  [1m[35mResource Load (0.2ms)[0m  SELECT "resources".* FROM "resources" ORDER BY oid desc
+  Rendered admin/resources/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:22:07 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.1ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:07 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:07 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:07 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:07 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:07 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:07 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:07 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:07 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:07 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:07 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:07 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:07 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:07 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:07 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:07 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:07 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:22:22 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mResource Load (0.2ms)[0m  SELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:22 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:22 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:22 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:22 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:22 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:22 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:22 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:22 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:22 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:22 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:22 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:22 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:22 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:22 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:22 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:22 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:22 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.1ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mResource Load (0.1ms)[0m  SELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:23 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.2ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mResource Load (0.1ms)[0m  SELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:24 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:22:25 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.1ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:25 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:25 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:25 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:25 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:25 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:25 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:25 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:25 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:25 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:25 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:25 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:25 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:25 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:25 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:25 -0400
+
+
+Started GET "/admin/resources" for 127.0.0.1 at 2014-06-08 01:22:25 -0400
+Processing by Admin::ResourcesController#index as HTML
+  [1m[35mResource Load (0.2ms)[0m  SELECT "resources".* FROM "resources" ORDER BY oid desc
+  Rendered admin/resources/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:22:39 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.1ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:39 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:39 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:39 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:39 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:39 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:22:39 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:39 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:39 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:39 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:39 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:39 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:39 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:39 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:22:39 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:23:10 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mResource Load (0.2ms)[0m  SELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 55ms (Views: 53.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:10 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:10 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:10 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:10 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:10 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:10 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:10 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:10 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:10 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:10 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:10 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:10 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:10 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:10 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:10 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:23:11 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.1ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:11 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:11 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:11 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:11 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:11 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:11 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:11 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:11 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:11 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:11 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:11 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:11 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:11 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:11 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:11 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:23:21 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mResource Load (0.1ms)[0m  SELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:21 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:21 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:21 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:21 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:21 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:21 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:21 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:21 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:21 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:21 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:21 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:21 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:21 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:21 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:21 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:23:27 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.2ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:27 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:27 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:27 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:27 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:27 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:27 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:27 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:27 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:27 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:27 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:27 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:27 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:27 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:27 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:27 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:23:28 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mResource Load (0.2ms)[0m  SELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:28 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:28 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:28 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:28 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:28 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:28 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:28 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:28 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:28 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:28 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:28 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:28 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:23:35 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.1ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:36 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:36 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:36 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:36 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:36 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:23:36 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:36 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:36 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:36 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:36 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:36 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:36 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:36 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:36 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:36 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:36 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:36 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:36 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:23:36 -0400
+
+
+Started GET "/admin/resources" for 127.0.0.1 at 2014-06-08 01:23:48 -0400
+Processing by Admin::ResourcesController#index as HTML
+  [1m[35mResource Load (0.2ms)[0m  SELECT "resources".* FROM "resources" ORDER BY oid desc
+  Rendered admin/resources/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:24:30 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.1ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 39ms (Views: 37.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:30 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:30 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:30 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:30 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:30 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:30 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:30 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:30 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:30 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:30 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:30 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:30 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:30 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:30 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:30 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:30 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:30 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:30 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:30 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:30 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:24:31 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mResource Load (0.1ms)[0m  SELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:31 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:31 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:31 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:31 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:31 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:31 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:31 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:31 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:31 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:31 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:31 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:31 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:31 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:31 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:31 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:24:32 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.1ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:32 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:32 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:32 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:32 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:32 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:32 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:32 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:32 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:32 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:32 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:32 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:32 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:32 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:32 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:32 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:24:33 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mResource Load (0.2ms)[0m  SELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:33 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:33 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:33 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:33 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:33 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:33 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:33 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:33 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:33 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:33 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:33 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:33 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:33 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:33 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:33 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:24:40 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.1ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:40 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:40 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:40 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:40 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:40 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:40 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:40 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:40 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:40 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:40 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:40 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:40 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:40 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:40 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:40 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mResource Load (0.1ms)[0m  SELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 38ms (Views: 36.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.1ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:48 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:24:58 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mResource Load (0.1ms)[0m  SELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 65ms (Views: 63.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:58 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:58 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:58 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:58 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:58 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:58 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:58 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:58 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:58 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:58 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:58 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:58 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:58 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:58 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:24:59 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.1ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:59 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:59 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:59 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:59 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:59 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:24:59 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:59 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:59 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:59 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:59 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:59 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:59 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:59 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:59 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:24:59 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:25:00 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mResource Load (0.2ms)[0m  SELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:00 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:00 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:00 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:00 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:00 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:00 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:00 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:00 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:00 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:00 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:00 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:00 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:00 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:00 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:00 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.1ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mResource Load (0.1ms)[0m  SELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:07 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:25:08 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.1ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:08 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:08 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:08 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:08 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:08 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:08 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:08 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:08 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:08 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:08 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:08 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:08 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:08 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:08 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:08 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mResource Load (0.1ms)[0m  SELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.1ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:15 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:25:17 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mResource Load (0.1ms)[0m  SELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:17 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:17 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:17 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:17 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:17 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:17 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:17 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:17 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:17 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:17 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:17 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:17 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:17 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:17 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:17 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:25:28 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.1ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:28 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:28 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:28 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:28 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:28 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:28 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:28 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:28 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:28 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:28 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:28 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:28 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:25:28 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mResource Load (0.1ms)[0m  SELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:29 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:29 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:29 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:29 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:29 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:29 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:29 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:29 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:29 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:29 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:29 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:25:29 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.1ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:30 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:30 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:30 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:30 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:30 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:30 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:30 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:30 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:30 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:30 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:30 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:30 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:30 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:30 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mResource Load (0.1ms)[0m  SELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 69ms (Views: 67.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.1ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:37 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:25:38 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mResource Load (0.1ms)[0m  SELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:38 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:38 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:38 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:38 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:38 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:38 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:38 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:38 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:38 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:38 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:38 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:38 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:38 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:38 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:25:39 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.1ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:40 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:40 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:40 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:40 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:40 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:40 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:40 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:40 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:40 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:40 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:40 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:40 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:40 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:40 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:40 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:25:44 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mResource Load (0.1ms)[0m  SELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 157ms (Views: 156.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:44 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:44 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:44 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:44 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:44 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:44 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:44 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:44 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:44 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:44 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:44 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.2ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mResource Load (0.1ms)[0m  SELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:45 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:25:46 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.1ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:46 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:46 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:46 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:46 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:46 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:25:46 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:46 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:46 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:46 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:46 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:46 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:46 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:46 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:46 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:25:46 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:26:17 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mResource Load (0.1ms)[0m  SELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 92ms (Views: 90.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:26:17 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:26:17 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:26:17 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:26:17 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:26:17 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:26:17 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:17 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:17 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:17 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:17 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:17 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:17 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:17 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:17 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:17 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.1ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 36ms (Views: 34.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/admin/resources/2/" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+Processing by Admin::ResourcesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mResource Load (0.2ms)[0m  SELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered admin/resources/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:18 -0400
+
+
+Started GET "/admin/resources" for 127.0.0.1 at 2014-06-08 01:26:19 -0400
+Processing by Admin::ResourcesController#index as HTML
+  [1m[36mResource Load (0.2ms)[0m  [1mSELECT "resources".* FROM "resources" ORDER BY oid desc[0m
+  Rendered admin/resources/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/resources" for 127.0.0.1 at 2014-06-08 01:26:20 -0400
+Processing by Admin::ResourcesController#index as HTML
+  [1m[35mResource Load (0.2ms)[0m  SELECT "resources".* FROM "resources" ORDER BY oid desc
+  Rendered admin/resources/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-08 01:26:21 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-08 01:26:21 -0400
+
+
+Started GET "/assets/admin/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:26:21 -0400
+
+
+Started GET "/assets/_admin.css?body=1" for 127.0.0.1 at 2014-06-08 01:26:21 -0400
+
+
+Started GET "/assets/alerts.css?body=1" for 127.0.0.1 at 2014-06-08 01:26:21 -0400
+
+
+Started GET "/assets/assets.css?body=1" for 127.0.0.1 at 2014-06-08 01:26:21 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:21 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:21 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:21 -0400
+
+
+Started GET "/assets/admin/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:21 -0400
+
+
+Started GET "/assets/alerts.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:21 -0400
+
+
+Started GET "/assets/assets.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:21 -0400
+
+
+Started GET "/assets/bs/bootstrap.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:21 -0400
+
+
+Started GET "/assets/bs/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:21 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-08 01:26:21 -0400
+
+
+Started GET "/admin/resources/2/edit" for 127.0.0.1 at 2014-06-08 01:26:25 -0400
+Processing by Admin::ResourcesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mResource Load (0.1ms)[0m  [1mSELECT "resources".* FROM "resources" WHERE "resources"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered admin/resources/_form.html.erb (6.4ms)
+  Rendered admin/resources/edit.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 58ms (Views: 57.5ms | ActiveRecord: 0.1ms)

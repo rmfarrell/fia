@@ -1,59 +1,68 @@
-<p id="notice"><%= notice %></p>
+<div class="admin">
+	<h1>Resource End Point</h1>
+	<div class="form-card">
+		<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Oid:</strong>
-  <%= @asset.oid %>
-</p>
+			<p>
+			  <strong>Oid:</strong>
+			  <%= @asset.oid %>
+			</p>
 
-<p>
-  <strong>Retrievalurl:</strong>
-  <%= @asset.retrievalURL %>
-</p>
+			<p>
+			  <strong>Retrievalurl:</strong>
+			  <%= @asset.retrievalURL %>
+			</p>
 
-<p>
-  <strong>Activefrom:</strong>
-  <%= @asset.activeFrom %>
-</p>
+			<p>
+			  <strong>Activefrom:</strong>
+			  <%= @asset.activeFrom %>
+			</p>
 
-<p>
-  <strong>Activeto:</strong>
-  <%= @asset.activeTo %>
-</p>
+			<p>
+			  <strong>Activeto:</strong>
+			  <%= @asset.activeTo %>
+			</p>
 
-<p>
-  <strong>Objecttype:</strong>
-  <%= @asset.objectType %>
-</p>
+			<p>
+			  <strong>Objecttype:</strong>
+			  <%= @asset.objectType %>
+			</p>
 
-<p>
-  <strong>Eventtype:</strong>
-  <%= @asset.eventType %>
-</p>
+			<p>
+			  <strong>Eventtype:</strong>
+			  <%= @asset.eventType %>
+			</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @asset.description %>
-</p>
+			<p>
+			  <strong>Description:</strong>
+			  <%= @asset.description %>
+			</p>
 
-<p>
-  <strong>Lang:</strong>
-  <%= @asset.lang %>
-</p>
+			<p>
+			  <strong>Lang:</strong>
+			  <%= @asset.lang %>
+			</p>
 
-<p>
-  <strong>License:</strong>
-  <%= @asset.license %>
-</p>
+			<p>
+			  <strong>License:</strong>
+			  <%= @asset.license %>
+			</p>
 
-<p>
-  <strong>Length:</strong>
-  <%= @asset.length %>
-</p>
+			<p>
+			  <strong>Length:</strong>
+			  <%= @asset.length %>
+			</p>
 
-<p>
-  <strong>Mimetype:</strong>
-  <%= @asset.mimeType %>
-</p>
+			<p>
+			  <strong>Mimetype:</strong>
+			  <%= @asset.mimeType %>
+			</p>
+		</div>
+		<div class="buttons-container">
+			<%= link_to 'List', admin_resources_path, :class => 'glyphicon glyphicon-list back-btn' %>
+			<%= link_to 'Edit', edit_admin_resource_path(@asset), :class => 'glyphicon glyphicon-pencil back-btn' %>
+		</div>
+	</div>
+	
 
-<%= link_to 'Edit', edit_admin_resource_path(@asset) %> |
 <%= link_to 'Back', admin_resource_path %>
