@@ -7,27 +7,27 @@
 
 .form-card {
 	text-align: left;
-	width: 800px;
+	width: 600px;
 	font-size: 1.2em;
 	background-color: #efefef;
 	margin: 2em auto;
 	padding: 1em 50px;
 	overflow: hidden;
 	position: relative;
+}	
 
-	.back-btn {
-		font-size: 1.9em;
-		display: block;
-		float: right;
-		text-decoration: none;
+html .back-btn {
+	font-size: 1.9em;
+	display: block;
+	text-decoration: none!important;
+	color: white!important;
 
-		&:before {
-			margin-right: .25em;
-		}
+	&:before {
+		margin-right: .25em;
+	}
 
-		&:hover {
-			background: transparent none;
-			color: black!important
-		}
+	&:hover {
+		background: transparent none;
+		color: #666!important;
 	}
 }
