@@ -1,15 +1,47 @@
+<h1>Listing assets</h1>
+
 <table>
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-  </tr>
- 
-  <% @assets.each do |a| %>
+  <thead>
     <tr>
-			<td><%= link_to a.title, a %></td>
-      <td><%= a.text %></td>
-			<td><%= link_to 'edit', edit_asset_path(a) %></td>
-			<td><%= link_to 'delete', asset_path(a), method: :delete, data:{confirm: 'are you sure?'} %></td>
+      <th>Oid</th>
+      <th>Retrievalurl</th>
+      <th>Activefrom</th>
+      <th>Activeto</th>
+      <th>Objecttype</th>
+      <th>Eventtype</th>
+      <th>Description</th>
+      <th>Lang</th>
+      <th>License</th>
+      <th>Length</th>
+      <th>Mimetype</th>
+      <th></th>
+      <th></th>
+      <th></th>
     </tr>
-  <% end %>
+  </thead>
+
+  <tbody>
+    <% @assets.each do |asset| %>
+      <tr>
+        <td><%= asset.oid %></td>
+        <td><%= asset.retrievalURL %></td>
+        <td><%= asset.activeFrom %></td>
+        <td><%= asset.activeTo %></td>
+        <td><%= asset.objectType %></td>
+        <td><%= asset.eventType %></td>
+        <td><%= asset.description %></td>
+        <td><%= asset.lang %></td>
+        <td><%= asset.license %></td>
+        <td><%= asset.length %></td>
+        <td><%= asset.mimeType %></td>
+        <td><%= link_to 'Show', asset %></td>
+        <td><%= link_to 'Edit', edit_asset_path(asset) %></td>
+        <td><%= link_to 'Destroy', asset, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
 </table>
+
+<br>
+
+<%= link_to 'New Asset', new_asset_path %>

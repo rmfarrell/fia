@@ -1,9 +1,59 @@
+<p id="notice"><%= notice %></p>
+
 <p>
-  <strong>Title:</strong>
-  <%= @asset.title %>
+  <strong>Oid:</strong>
+  <%= @asset.oid %>
 </p>
- 
+
 <p>
-  <strong>Text:</strong>
-  <%= @asset.text %>
+  <strong>Retrievalurl:</strong>
+  <%= @asset.retrievalURL %>
 </p>
+
+<p>
+  <strong>Activefrom:</strong>
+  <%= @asset.activeFrom %>
+</p>
+
+<p>
+  <strong>Activeto:</strong>
+  <%= @asset.activeTo %>
+</p>
+
+<p>
+  <strong>Objecttype:</strong>
+  <%= @asset.objectType %>
+</p>
+
+<p>
+  <strong>Eventtype:</strong>
+  <%= @asset.eventType %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @asset.description %>
+</p>
+
+<p>
+  <strong>Lang:</strong>
+  <%= @asset.lang %>
+</p>
+
+<p>
+  <strong>License:</strong>
+  <%= @asset.license %>
+</p>
+
+<p>
+  <strong>Length:</strong>
+  <%= @asset.length %>
+</p>
+
+<p>
+  <strong>Mimetype:</strong>
+  <%= @asset.mimeType %>
+</p>
+
+<%= link_to 'Edit', edit_admin_asset_path(@asset) %> |
+<%= link_to 'Back', admin_assets_path %>

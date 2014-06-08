@@ -11,11 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140607023059) do
+ActiveRecord::Schema.define(version: 20140607211653) do
 
   create_table "assets", force: true do |t|
-    t.string   "title"
-    t.text     "text"
+    t.string   "oid"
+    t.string   "retrievalURL"
+    t.date     "activeFrom"
+    t.date     "activeTo"
+    t.string   "objectType"
+    t.string   "eventType"
+    t.string   "description"
+    t.string   "lang"
+    t.string   "license"
+    t.integer  "length"
+    t.string   "mimeType"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
