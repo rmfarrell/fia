@@ -11,9 +11,18 @@
 	font-size: 1.2em;
 	background-color: #efefef;
 	margin: 2em auto;
-	padding: 1em 50px;
+	padding: 1em 2%;
 	overflow: hidden;
 	position: relative;
+	
+	.form-group {
+		margin-bottom: 1.2em;
+	}
+	
+	.btn {
+		background-color: #101010;
+		color: #efefef;
+	}
 }	
 
 html .back-btn {
