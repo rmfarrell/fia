@@ -1,47 +1,33 @@
-<h1>Listing Resources</h1>
+<div class="admin">
+  <% @assets.order("oid desc").each do |asset| %>
+	<div class="asset">
+		<p class="oid"><%= asset.oid %></p>
+		<p class="description"><%= asset.description %></p>
+		
+		<ul class="use-metadata">
+			<li><label>Event Type:</label> <%= asset.eventType %></li>
+			<li><label>Object Type: </label> <%= asset.objectType %></li>
+			<li><label>Active: </label> <%= asset.activeFrom %>...<%= asset.activeTo %></li>
+		</ul>
+		<div class="file">
+			<ul class="file-info">
+				<li><label>URL: </label> <a class="retrieve" href="<%= asset.retrievalURL %>" target="_blank"><%= asset.retrievalURL %></a></strong></li>
+				<li><label>Language: </label> <%= asset.lang %></li>
+				<li><label>MIME type: </label> <%= asset.mimeType %></li>
+				<li><label>Size: </label> <%= number_to_human_size(asset.length, precision: 2) %></li>
+				<li><label>Licence: </label> <a class="retrieve" href="<%= asset.license %>" target="_blank"><%= asset.license %></a></li>
+			</ul>
+		</div>
+		<ul class="edit-actions">
+			<li><%= link_to '', admin_resource_path(asset), :class => 'glyphicon glyphicon-share-alt' %></li>
+			<li><%= link_to '', edit_admin_resource_path(asset), :class => 'glyphicon glyphicon-pencil' %></li>
+			<li><%= link_to '', asset, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'glyphicon glyphicon-trash' %></li>
+		</ul>
+	</div>
+	<% end %>
+	<footer>
+		<%= link_to 'Add', new_admin_resource_path, :class => 'glyphicon glyphicon-edit' %>
+	</footer>
+</div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Oid</th>
-      <th>Retrievalurl</th>
-      <th>Activefrom</th>
-      <th>Activeto</th>
-      <th>Objecttype</th>
-      <th>Eventtype</th>
-      <th>Description</th>
-      <th>Lang</th>
-      <th>License</th>
-      <th>Length</th>
-      <th>Mimetype</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @assets.each do |asset| %>
-      <tr>
-        <td><%= asset.oid %></td>
-        <td><%= asset.retrievalURL %></td>
-        <td><%= asset.activeFrom %></td>
-        <td><%= asset.activeTo %></td>
-        <td><%= asset.objectType %></td>
-        <td><%= asset.eventType %></td>
-        <td><%= asset.description %></td>
-        <td><%= asset.lang %></td>
-        <td><%= asset.license %></td>
-        <td><%= asset.length %></td>
-        <td><%= asset.mimeType %></td>
-        <td><%= link_to 'Show', asset %></td>
-        <td><%= link_to 'Edit', edit_resource_path(asset) %></td>
-        <td><%= link_to 'Destroy', asset, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Resource', new_admin_resource_path %>

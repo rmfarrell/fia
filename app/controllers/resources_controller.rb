@@ -62,9 +62,10 @@ class ResourcesController < ApplicationController
   # DELETE /assets/1
   # DELETE /assets/1.json
   def destroy
+    @asset = Resource.find(params[:id])
     @asset.destroy
     respond_to do |format|
-      format.html { redirect_to assets_url }
+      format.html { redirect_to admin_resources_path }
       format.json { head :no_content }
     end
   end

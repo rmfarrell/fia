@@ -17,46 +17,46 @@
   </div>
   <div class="field">
     <%= f.label :retrievalURL %><br>
-    <%= f.text_field :retrievalURL, :type => "url" %>
+    <%= f.text_field :retrievalURL, :type => "url", :class => 'form-control' %>
   </div>
   <div class="field">
     <%= f.label :activeFrom %><br>
-    <%= f.date_select :activeFrom %>
+    <%= f.date_select :activeFrom, :class => 'form-control' %>
   </div>
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :activeTo %><br>
-    <%= f.date_select :activeTo, :default => Date.new(9999, 12, 31) %>
+    <%= f.date_select :activeTo, :default => Date.new(9999, 12, 31), :class => 'form-control' %>
   </div>
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :objectType %><br>
-    <%= f.text_field :objectType, :placeholder => 'e.g. warningText, warningTone' %>
+    <%= f.text_field :objectType, :placeholder => 'e.g. warningText, warningTone', :class => 'form-control' %>
   </div>
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :eventType %><br>
-    <%= f.text_field :eventType, :value => 'any' %>
+    <%= f.text_field :eventType, :value => 'any', :class => 'form-control' %>
   </div>
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :description %><br>
-    <%= f.text_area :description, :size => "90x6" %>
+    <%= f.text_area :description, :size => "90x6", :class => 'form-control' %>
   </div>
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :lang %><br>
-    <%= f.text_field :lang, :value => 'en', :size => 2 %>
+    <%= f.text_field :lang, :value => 'en', :size => 2, :class => 'form-control' %>
   </div>
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :license %><br>
-    <%= f.text_field :license, :value => 'https://creativecommons.org/licenses/by-sa/4.0/', :type => "url" %>
+    <%= f.text_field :license, :value => 'https://creativecommons.org/licenses/by-sa/4.0/', :type => "url", :class => 'form-control' %>
   </div>
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :length %><br>
-    <%= f.number_field :length, :type => 'number' %>
+    <%= f.number_field :length, :type => 'number', :class => 'form-control' %>
 		<span>bytes</span>
   </div>
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :mimeType %><br>
-    <%= f.text_field :mimeType, :placeholder => 'image/svg' %>
+    <%= f.text_field :mimeType, :placeholder => 'image/svg', :class => 'form-control' %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="actions form-group">
+    <%= f.submit 'Update', :class => 'btn btn-default' %>
   </div>
 <% end %>

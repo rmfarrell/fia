@@ -1,4 +1,8 @@
-<%= render 'form' %>
+<div class="admin">
+	<div class="form-card">
+	<%= render 'form' %>
 
-<%= link_to 'Show', @asset %> |
-<%= link_to 'Back', resources_path %>
+	<!-- <%= link_to 'Show', @asset %> | -->
+	<%= link_to 'List', admin_resources_path, :class => 'glyphicon glyphicon-list back-btn' %>
+	</div>
+</div>
