@@ -1,19 +1,19 @@
-class Admin::AssetsController < ApplicationController
+class Admin::ResourcesController < ApplicationController
   
   def index
-    @assets = Asset.all
+    @assets = Resource.all
   end
   
   def edit
-    @asset = Asset.find(params[:id])
+    @asset = Resource.find(params[:id])
   end
 
   def show
-    @asset = Asset.find(params[:id])
+    @asset = Resource.find(params[:id])
   end
   
   def update
-    @asset = Asset.find(params[:id])
+    @asset = Resource.find(params[:id])
     
     if @asset.update(asset_params)
       redirect_to @asset
@@ -23,14 +23,14 @@ class Admin::AssetsController < ApplicationController
   end
   
   def new
-    @asset = Asset.new
+    @asset = Resource.new
   end
   
   def destroy
-    @asset = Asset.find(params[:id])
+    @asset = Resource.find(params[:id])
     @asset.destroy
       
-    redirect_to assets_path
+    redirect_to resources_path
   end
   
   private

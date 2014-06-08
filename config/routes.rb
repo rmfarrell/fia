@@ -1,18 +1,19 @@
 Fia::Application.routes.draw do
   
-  resources :assets
+  resources :resources
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
     
   namespace :admin do
-    resources :assets
+    resources :resources
   end
   
-  get '/admin/', to: 'admin/assets#index'
+  get '/admin/', to: 'admin/resources#index'
+  get '/admin/new', to: 'admin/resources#new'
   
   # You can have the root of your site routed with "root"
-  root 'assets#index'
+  root 'resources#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
