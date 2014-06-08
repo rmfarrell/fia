@@ -1,0 +1,397 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="keywords" content="FIA,reference service,common alerting protocol,CAP"/>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <meta http-equiv="content-language" content="en"/>
+  <meta name="description" content="Reference Service of the Federation for Internet Alerts"/>
+  <meta name="author" content="Eliot Christian"/>
+  <meta name="expires" content="never"/>
+  <title>Reference Service of the Federation for Internet Alerts</title>
+<style> 
+tr {
+ vertical-align:top
+}
+td, th {
+ border:1px solid black;
+}
+</style>
+<script>
+var xhttp;
+var resourceURL = '/resources.xml'
+
+if (window.XMLHttpRequest) {
+  xhttp = new XMLHttpRequest();
+} else {
+  xhttp = new ActiveXObject('Microsoft.XMLHTTP');
+}
+if (window.ActiveXObject)   {
+  xhttp = new ActiveXObject("Msxml2.XMLHTTP");
+} else {
+  xhttp = new XMLHttpRequest();
+}
+function microsoftXmlParser () {
+  if (window.ActiveXObject) {
+    var parser = ['Msxml2.DOMDocument.6.0', 
+      'Msxml2.DOMDocument.5.0', 'Msxml2.DOMDocument.4.0', 
+      'Msxml2.DOMDocument.3.0', 'MSXML2.DOMDocument', 
+      'Microsoft.XMLDOM']; // the same as MSXML.DOMDocument 
+    for (var i in parser) { 
+      try { 
+        xmlParser = new ActiveXObject(parser[i]);
+        return xmlParser; 
+      } catch (e) {
+        alert("Failed to determine XML parser for this Microsoft browser");
+        return null; 
+      }
+    }
+  }
+  return null;  // this function should not be called if not ActiveXObject 
+}
+var xmlResourcesDOM;
+var headingMetadataElements;
+
+function loadResourcesDOM (resourcesPathFileName) {
+	
+	var resourcesPathFileName = resourcesPathFileName || resourceURL;
+	
+  if (!resourcesPathFileName) {
+    resourcesPathFileName = document.getElementById('resourcesPathFileName').value;
+  }
+  xhttp.open('GET', resourcesPathFileName, false);  
+  if (xhttp.overrideMimeType) {
+    xhttp.overrideMimeType('text/xml');
+  }
+  xhttp.send(null);
+  if (window.ActiveXObject) {
+    xmlResourcesDOM = microsoftXmlParser();
+    xmlResourcesDOM.async = false;
+    xmlResourcesDOM.loadXML(xhttp.responseText);
+  } else {
+    xmlResourcesDOM = xhttp.responseXML;
+  }  
+  if (!xmlResourcesDOM) {
+    xmlResourcesDOM = (new DOMParser()).parseFromString(xhttp.responseText, 'text/xml');
+  }
+
+	console.log(xmlResourcesDOM)
+	
+  headingMetadataElements = "<table>\n  <tr>\n    <thead>\n";
+  var resourceMetadata;
+  if (window.ActiveXObject || xhttp.responseType=="msxml-document") {
+    xmlResourcesDOM.setProperty("SelectionLanguage","XPath"); 
+    resourceMetadata = xmlResourcesDOM.selectNodes("/resources/resource[1]/*");
+    for (i=0;i<resourceMetadata.length;i++) { 
+      if (resourceMetadata[i].nodeType==1) { //Process only element nodes (type 1) 
+        headingMetadataElements += "      <th>";
+        headingMetadataElements += resourceMetadata[i].nodeName;
+        headingMetadataElements += "</th>\n";
+      } 
+    }	
+  } else if (document.implementation && document.implementation.createDocument) {
+		var iterateMetadata = xmlResourcesDOM.evaluate('/resources/resource[1]', xmlResourcesDOM, null, XPathResult.ANY_TYPE, null );
+		var thisMetadata = iterateMetadata.iterateNext();
+    while (thisMetadata) {
+      resourceMetadata = thisMetadata.childNodes;
+      for (i=0;i<resourceMetadata.length;i++) {
+        if (resourceMetadata[i].nodeType==1) { //Process only element nodes (type 1) 
+          headingMetadataElements += "      <th>";
+          headingMetadataElements += resourceMetadata[i].nodeName;
+          headingMetadataElements += "</th>\n";
+        } 
+      }	
+      thisMetadata = iterateMetadata.iterateNext();
+    }
+    headingMetadataElements += "    </thead>\n  </tr>\n"	
+  }
+}
+
+var xslSelectionDOM;
+
+var selectedResourcesDOM;
+
+function selectResources() {
+  var xpathAsEntered = document.findResourcesForm.xpathExpression.value;
+  var xpathExpression = xpathAsEntered.replace(/</g, '&lt;').replace(/>/g,'&gt;').replace(/"/g,'/"');
+  var xslString = "<xsl:stylesheet version=\"2.0\" \n" +
+	       "                xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" \n" +
+	       "                xmlns:xs=\"http://www.w3.org/2001/XMLSchema\"> \n" +
+	       "<xsl:output method = \"xml\" indent = \"yes\" omit-xml-declaration= \"yes\" />\n" +
+	       "<xsl:template match = \"/resources\" >\n" +
+	       "  <resources>\n" +
+	       "    <xsl:copy-of select = \"//resource"+xpathExpression+"\" /> \n" +
+	       "  </resources>\n" +
+	       "</xsl:template>\n" +
+	       "</xsl:stylesheet>\n";
+  if (window.ActiveXObject) {
+    xslSelectionDOM = microsoftXmlParser();
+    xslSelectionDOM.async = false;
+    xslSelectionDOM.loadXML(xslString);
+  } else  { 
+    parser = new DOMParser();
+    xslSelectionDOM = (new DOMParser()).parseFromString(xslString, 'text/xml');
+  } 
+  if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
+    try { 
+      selectedResourcesString = xmlResourcesDOM.transformNode(xslSelectionDOM);
+      selectedResourcesDOM = microsoftXmlParser();
+      selectedResourcesDOM.async = false;
+      selectedResourcesDOM.loadXML("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"+selectedResourcesString);
+    } catch (e) {
+      alert("Failed in stylesheet transform using selection XPath expression");
+    }
+    activexSelectedTable();
+  } else if (document.implementation && document.implementation.createDocument){
+    try { 
+      xsltProcessor = new XSLTProcessor();
+      xsltProcessor.importStylesheet(xslSelectionDOM);
+      selectedResourcesDOM = xsltProcessor.transformToDocument(xmlResourcesDOM);
+    } catch (e) {
+      alert("Failed in stylesheet transform using selection XPath expression");
+    }
+    standardSelectedTable();
+  }
+  document.getElementById("selectedResourcesTable").innerHTML = selectedResourcesTable; 
+}
+
+var selectedResourcesTable;
+
+function standardSelectedTable () {
+	
+  selectedResourcesTable = headingMetadataElements + "  <tbody>\n";
+  resourceNodes=selectedResourcesDOM.documentElement.childNodes;
+
+  for (i=0;i<resourceNodes.length;i++) {
+    selectedResourcesTable += "    <tr>\n";
+    resourceMetadata = resourceNodes[i].childNodes;
+    for (j=0;j<resourceMetadata.length;j++) { 
+      if (resourceMetadata[j].nodeType==1) { //Process only element nodes (type 1) 
+        selectedResourcesTable += "      <td>";
+        selectedResourcesTable += resourceMetadata[j].childNodes[0].nodeValue;
+        selectedResourcesTable += "</td>\n";
+      }  
+    }	
+    selectedResourcesTable += "    </tr>\n";
+  }
+  selectedResourcesTable += "  </tbody>\n</table>\n";
+}
+
+function activexSelectedTable () {
+  selectedResourcesTable = headingMetadataElements + "  <tbody>\n";
+  selectedResourcesDOM.setProperty("SelectionLanguage","XPath");  
+  resourceNodes=selectedResourcesDOM.selectNodes("/resources/resource");
+  for (i=0;i<resourceNodes.length;i++) {
+    selectedResourcesTable += "    <tr>\n";
+    resourceMetadata = resourceNodes[i].childNodes;
+    for (j=0;j<resourceMetadata.length;j++) { 
+      selectedResourcesTable += "      <td>";
+      selectedResourcesTable += resourceMetadata[j].text;
+      selectedResourcesTable += "</td>\n";
+    }	
+    selectedResourcesTable += "    </tr>\n";
+  }
+  selectedResourcesTable += "  </tbody>\n</table>\n";
+}
+
+// A description of the available XPath functions is at 
+// http://www.w3schools.com/xpath/xpath_functions.asp
+var xpathOids = "";
+var xpathRetrievalURL = "";
+var xpathActiveDate = "";
+var xpathObjectTypes = "";
+var xpathEventTypes = "";
+var xpathFullText = "";
+var xpathLanguage = "";
+var xpathLength = "";
+
+function showSelections() {
+  var xpathSelections = "";
+  if (xpathOids != "") { xpathSelections += xpathOids; }
+  if (xpathRetrievalURL != "") { xpathSelections += xpathRetrievalURL; }
+  if (xpathActiveDate != "") { xpathSelections += xpathActiveDate; }
+  if (xpathObjectTypes != "") { xpathSelections += xpathObjectTypes; }
+  if (xpathEventTypes != "") { xpathSelections += xpathEventTypes; }
+  if (xpathFullText != "") { xpathSelections += xpathFullText; }
+  if (xpathLanguage != "") { xpathSelections += xpathLanguage; }
+  if (xpathLength != "") { xpathSelections += xpathLength; }
+  document.findResourcesForm.xpathExpression.value = xpathSelections;
+}
+
+function selectOids() { // insert XPath 'or' operator between OID pairs
+  xpathOids = "";
+  var oids = document.findResourcesForm.oid.value.trim();
+  if (oids == "") { 
+    showSelections();
+    return;
+  }
+  var arrayOids = oids.split(/[ ,]+/);
+  for (i=0;i<arrayOids.length;i++) {
+    if (xpathOids != "") { xpathOids += " or " };
+    xpathOids += "oid='"+arrayOids[i]+"'";
+  }  
+  xpathOids = "[" + xpathOids + "]";
+  showSelections();
+}  
+
+function selectRetrievalURL() { // take the URL as given (only one URL expected)
+  xpathRetrievalURL = "";
+  var retrievalURL = document.findResourcesForm.retrievalURL.value.trim();
+  if (retrievalURL != "") { 
+    xpathRetrievalURL = "[retrievalURL='"+retrievalURL+"']";
+  }
+  showSelections();
+}  
+
+function selectActiveDate() { // either active on a date or still active now
+  xpathActiveDate = "";
+  if (document.getElementById("activeNow").checked) { 
+    xpathActiveDate = "[activeTo='9999-12-31']";
+    showSelections();
+    return;
+  }  
+  var activeDate = document.findResourcesForm.activeDate.value.trim();
+  if (activeDate != "") { 
+    xpathActiveDate = "[translate(activeFrom,'-','')<="+
+         activeDate+"][translate(activeTo,'-','')>="+activeDate+"]";
+  }
+  showSelections();
+}  
+
+function selectObjectTypes() {  // multiple object types can be selected
+  xpathObjectTypes = "";
+  var oSelect = document.findResourcesForm.objectType;
+  if (oSelect[0].selected) { // this is to reset the multiple select
+    for (i=1;i<oSelect.length;i++) {
+      oSelect[i].selected = false;
+    }
+    showSelections();
+    return;
+  }
+  for (i=1;i<oSelect.length;i++) {
+    if (oSelect[i].selected) {
+      if (xpathObjectTypes != "") { xpathObjectTypes += " or " };
+      xpathObjectTypes += "objectType='"+oSelect[i].value+"'";
+    }
+  }
+  if (xpathObjectTypes != "") { 
+    xpathObjectTypes = "[" + xpathObjectTypes + "]";
+  }
+  showSelections();
+}
+function selectEventTypes() {  // multiple object types can be selected
+  xpathEventTypes = "";
+  var oSelect = document.findResourcesForm.eventType;
+  if (oSelect[0].selected) { // this is to reset the multiple select
+    for (i=1;i<oSelect.length;i++) {
+      oSelect[i].selected = false;
+    }
+    showSelections();
+    return;
+  }
+  for (i=0;i<oSelect.length;i++) {
+    if (oSelect[i].selected) {
+      if (xpathEventTypes != "") { xpathEventTypes += " or " };
+      xpathEventTypes += "eventType='"+oSelect[i].value+"'";
+    }
+  }
+  if (xpathEventTypes != "") { 
+    xpathEventTypes = "[" + xpathEventTypes + " or eventType='any']";
+  }
+  showSelections();
+}
+
+function selectFullText() { // here words are discrete, not a pharse
+  xpathFullText = "";
+  var words = document.findResourcesForm.fullText.value.trim();
+  if (words == "") { 
+    showSelections();
+    return;
+  } 
+  var arrayWords = words.split(/[ ,]+/);
+  for (i=0;i<arrayWords.length;i++) { 
+    xpathFullText += "[contains(.,'"+arrayWords[i]+"')]";
+  }  
+  showSelections();
+}  
+
+function selectLanguage() { // language code matches if no language also
+  xpathLanguage = "";
+  var language = document.findResourcesForm.language.value.trim();
+  if (language != "") { 
+    xpathLanguage = "[lang='"+language+"' or lang='any']";
+  }
+  showSelections();
+}  
+
+function selectLength() { // language code matches if no language also
+  xpathLength = "";
+  var maxLength = document.findResourcesForm.maxLength.value.trim();
+  if (maxLength == "") { 
+    showSelections();
+    return;
+  }
+  if (isNaN(maxLength)) {
+    alert("Length must be a number");
+    return;
+  }
+  xpathLength = "[length<'"+maxLength+"']";
+  showSelections();
+}  
+</script>
+</head>
+<body onload="loadResourcesDOM()" >
+<h3>Reference Service of the Federation for Internet Alerts (FIA)</h3>
+<p>Find resources in the FIA Reference Service, a facility for sharing resources 
+relevant to publishing public warnings by online media, especially FIA Partners.</p> 
+<form name="findResourcesForm" method=post >
+  <table>
+   <tr>
+    <td>Specific OID's, e.g., 2.49.1.99 <br/> 
+      <input id="oid" name="oid" type="text" onchange="selectOids()" />
+    </td>
+    <td>Specific retrieval URL <br/> 
+      <input id="retrievaURL" name="retrievalURL" type="text" onchange="selectRetrievalURL()" />
+    </td>
+    <td>Active only 
+         <input id="activeNow" name="activeNow" type="checkbox" value="" onchange="selectActiveDate()" /> 
+        or resources active on<br/> 
+         YYYY-MM-DD 
+         <input id="activeDate" name="activeDate" type="text" value="" onchange="selectActiveDate()" />
+    </td>
+   </tr>
+   <tr>
+    <td>Specific object types <br/> 
+      <select id="objectType" name="objectType" multiple size="7" onchange="selectObjectTypes()">
+        <option value="noSelect">-------------</option>
+        <option value="capExample">capExample</option>
+        <option value="document">document</option>
+        <option value="logo">logo</option>
+        <option value="pictograph">pictograph</option>
+        <option value="selectionRule">selectionRule</option>
+        <option value="warningText">warningText</option>
+        <option value="warningTone">warningTone</option>
+     </select>
+     </td>
+     <td>Specific event types <br/> 
+      <select id="eventType" name="eventType" multiple onchange="selectEventTypes()">
+        <option value="noSelect">-------------</option>
+        <option value="tornado">tornado</option>
+        <option value="tsunami">tsunami</option>
+      </select>
+     </td>
+     <td>Specific words <br/> 
+      <input id="words" name="fullText" type="fullText" onchange="selectFullText()" /><br/>
+      Specific <a href="http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" target="_blank">
+        2-character language code</a>,<br/>  e.g. 'en' 
+      <input id="language" name="language" type="text" size="2" onchange="selectLanguage()" /><br/>
+      Specifc where length is less than <br/> 
+      <input id="maxLength" name="maxLength" type="text" size="8" onchange="selectLength()" /><br/>
+     </td>
+   </tr>
+  </table>
+  <p><input type="button" onclick="selectResources()" value="select resources using the XPath expression below." /></p>
+  <p><input id="xpathExpression" name="xpathExpression" value="" type="text" size="100"/></p>
+ </form>
+<div id="selectedResourcesTable"></div>
+</html>

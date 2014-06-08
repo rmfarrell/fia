@@ -1,5 +1,5 @@
 class ResourcesController < ApplicationController
-  respond_to :xml, :html, :json
+  respond_to :xml,:json
   #before_action :set_asset, only: [:show, :edit, :update, :destroy]
 
   # GET /assets
@@ -8,21 +8,21 @@ class ResourcesController < ApplicationController
     @assets = Resource.all
     
     respond_to do |format|
-      format.html # show.html.erb
-      format.xml # show.xml.builder
-      format.json # show.xml.builder
+      format.html { render :xml => @assets }# index.html.erb
+      format.xml { render :xml => @assets }# index.xml.builder
+      format.json { render :json => @assets }# index.xml.builder
     end
   end
 
-  # GET /assets/1
-  # GET /assets/1.json
+  # GET /resources/1
+  # GET /resources/1.json
   def show
     @asset = Resource.find(params[:id])
     
     respond_to do |format|
-      format.html # show.html.erb
-      format.xml # show.xml.builder
-      format.json # show.xml.builder
+      format.html { render :xml => @asset }# index.html.erb
+      format.xml { render :xml => @asset }# index.xml.builder
+      format.json { render :json => @asset }# index.xml.builder
     end
   end
 

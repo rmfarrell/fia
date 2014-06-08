@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    xmlns="urn:fia:reference:resources:v1" 
+    targetNamespace="urn:fia:reference:resources:v1" 
+    elementFormDefault="unqualified" attributeFormDefault="unqualified">
+  <xs:annotation>
+    <xs:documentation>FIA Reference Service Resources</xs:documentation>
+  </xs:annotation>
+  <xs:element name="oid" type="xs:string"/>
+  <xs:element name="retrievalURL" type="xs:anyURI"/>
+  <xs:element name="activeFrom" type="xs:date"/>
+  <xs:element name="activeTo" type="xs:date"/>
+  <xs:element name="objectType">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="capExample"/>
+        <xs:enumeration value="document"/>
+        <xs:enumeration value="logo"/>
+        <xs:enumeration value="pictograph"/>
+        <xs:enumeration value="selectionRule"/>
+        <xs:enumeration value="warningText"/>
+        <xs:enumeration value="warningTone"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="eventType">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="any"/>
+        <xs:enumeration value="tornado"/>
+        <xs:enumeration value="tsunami"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="description" type="xs:string"/>
+  <xs:element name="lang" type="xs:string"/>
+  <xs:element name="license" type="xs:anyURI"/>
+  <xs:element name="length" type="xs:string"/>
+  <xs:element name="mimeType" type="xs:string"/>
+  <xs:element name="resource">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="oid"/>
+        <xs:element ref="retrievalURL"/>
+        <xs:element ref="activeFrom"/>
+        <xs:element ref="activeTo"/>
+        <xs:element ref="objectType"/>
+        <xs:element ref="eventType"/>
+        <xs:element ref="description"/>
+        <xs:element ref="lang"/>
+        <xs:element ref="license"/>
+        <xs:element ref="length"/>
+        <xs:element ref="mimeType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="resources">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="resource" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
