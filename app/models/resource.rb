@@ -6,7 +6,7 @@ class Resource < ActiveRecord::Base
   scope :langTypeTest, -> (language) { where lang: language}
   #scope :search, -> (search) {where description: search}
   scope :searchDescription, -> (search) { where("description like ?", "%#{search}%".downcase)}
-  scope :eventTypeTest, -> (eventtype) {where('eventType=? OR eventType=?', eventtype, 'any')}
+  scope :eventTypeTest, -> (eventtype) {where('eventtype=? OR eventtype=?', eventtype, 'any')}
   scope :isActive, -> () { where activeTo: '9999-12-31'}
   
   # scope :status, -> (status) { where status: status }
