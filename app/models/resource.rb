@@ -5,7 +5,7 @@ class Resource < ActiveRecord::Base
   scope :objectTypeTest, -> (objecttype) { where objectType: objecttype}
   scope :langTypeTest, -> (language) { where lang: language}
   #scope :search, -> (search) {where description: search}
-  scope :searchDescription, -> (search) { where("description like ?", "%#{search}%")}
+  scope :searchDescription, -> (search) { where("description like ?", "%#{search}%".downcase)}
   scope :eventTypeTest, -> (eventtype) {where('eventType=? OR eventType=?', eventtype, 'any')}
   scope :isActive, -> () { where activeTo: '9999-12-31'}
   
@@ -15,6 +15,10 @@ class Resource < ActiveRecord::Base
   
   def self.findbyoid(params)
     Resource.find_by(oid: params)
+  end
+  
+  def self.find_all_by_name(name)
+    find(:all, :conditions => ["LOWER(name) = ?", name.downcase])
   end
   
   # def self.search(params)
