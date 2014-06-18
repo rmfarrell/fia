@@ -1,6 +1,6 @@
 Fia::Application.routes.draw do
   
-  resources :resources
+  resources :resources, :constraints => { :oid => /[\w+\.]+/ }
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -9,7 +9,7 @@ Fia::Application.routes.draw do
     resources :resources
   end
   
-  get 'oid/:oid' => 'resources#findbyoid'
+  get 'oid/:oid' => 'resources#findbyoid' #, :constraints => { :oid => /[\w+\.]+/ } REMOVING THIS BECAUSE IT CONFLICTS WITH JSON
   
   
   get '/admin/', to: 'admin/resources#index'

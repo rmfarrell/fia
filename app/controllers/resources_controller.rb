@@ -1,28 +1,17 @@
 class ResourcesController < ApplicationController
   respond_to :xml,:json
   #before_action :set_asset, only: [:show, :edit, :update, :destroy]
-
-  # GET /assets
-  # GET /assets.json
+  
   def index
     
     @assets = Resource.where(nil)
-    @assets = @assets.oid(params[:oid]) if params[:oid].present?
-    # @assets = []
-    # 
-    # return render :text => conditions2
-    # 
-    # 
-    # 
-    # conditions2 = ["oid=? AND objecttype=?", "45", "warningText"]
-    # 
-    # 
-    # 
-    # @assets = Resource.find(:all, :conditions => conditions2)
-    # 
-    # respond_to do |format|
-    #   format.html {render :html => @assets}
-    # end
+    @assets = @assets.oidTest(params[:oid]) if params[:oid].present?
+    @assets = @assets.urlTest(params[:retrievalurl]) if params[:retrievalurl].present?
+    @assets = @assets.objectTypeTest(params[:objecttype]) if params[:objecttype].present?
+    @assets = @assets.eventTypeTest(params[:eventtype]) if params[:eventtype].present?
+    @assets = @assets.langTypeTest(params[:language]) if params[:language].present?
+    @assets = @assets.searchDescription(params[:search]) if params[:search].present?
+    @assets = @assets.isActive() unless params[:showinactive] == 'true'
     
     respond_to do |format|
       format.html { render :xml => @assets }# index.html.erb

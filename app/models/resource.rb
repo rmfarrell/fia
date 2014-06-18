@@ -1,6 +1,13 @@
 class Resource < ActiveRecord::Base
   
-  scope :oid, -> (oid) { where oid: (oid) }
+  scope :oidTest, -> (oid) { where oid: oid }
+  scope :urlTest, -> (retrievalurl) { where retrievalURL: retrievalurl }
+  scope :objectTypeTest, -> (objecttype) { where objectType: objecttype}
+  scope :langTypeTest, -> (language) { where lang: language}
+  #scope :search, -> (search) {where description: search}
+  scope :searchDescription, -> (search) { where("description like ?", "%#{search}%")}
+  scope :eventTypeTest, -> (eventtype) {where('eventType=? OR eventType=?', eventtype, 'any')}
+  scope :isActive, -> () { where activeTo: '9999-12-31'}
   
   # scope :status, -> (status) { where status: status }
   #   scope :location, -> (location_id) { where location_id: location_id }
