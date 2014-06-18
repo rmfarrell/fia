@@ -9,6 +9,9 @@ Fia::Application.routes.draw do
     resources :resources
   end
   
+  get 'oid/:oid' => 'resources#findbyoid'
+  
+  
   get '/admin/', to: 'admin/resources#index'
   get '/admin/new', to: 'admin/resources#new'
   

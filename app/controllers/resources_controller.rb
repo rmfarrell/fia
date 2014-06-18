@@ -5,7 +5,24 @@ class ResourcesController < ApplicationController
   # GET /assets
   # GET /assets.json
   def index
-    @assets = Resource.all
+    
+    @assets = Resource.where(nil)
+    @assets = @assets.oid(params[:oid]) if params[:oid].present?
+    # @assets = []
+    # 
+    # return render :text => conditions2
+    # 
+    # 
+    # 
+    # conditions2 = ["oid=? AND objecttype=?", "45", "warningText"]
+    # 
+    # 
+    # 
+    # @assets = Resource.find(:all, :conditions => conditions2)
+    # 
+    # respond_to do |format|
+    #   format.html {render :html => @assets}
+    # end
     
     respond_to do |format|
       format.html { render :xml => @assets }# index.html.erb
@@ -13,7 +30,17 @@ class ResourcesController < ApplicationController
       format.json { render :json => @assets }# index.xml.builder
     end
   end
-
+  
+  def findbyoid
+    @asset = Resource.findbyoid(params[:oid])
+    
+    respond_to do |format|
+      format.html { render :xml => @asset }# index.html.erb
+      format.xml { render :xml => @asset }# index.xml.builder
+      format.json { render :json => @asset }# index.xml.builder
+    end
+  end
+  
   # GET /resources/1
   # GET /resources/1.json
   def show
@@ -24,6 +51,14 @@ class ResourcesController < ApplicationController
       format.xml { render :xml => @asset }# index.xml.builder
       format.json { render :json => @asset }# index.xml.builder
     end
+  end
+  
+  def display
+    conditions = []
+    conditions << [ "in_production = ?", params[:in_production] ] if params[:in_production].present?
+    conditions << [ "year = ?", params[:year] ] if params[:year].present?
+    conditions << [ "make = ?", params[:make] ] if params[:make].present?
+    @cars = Car.all(:conditions => conditions )
   end
 
   # GET /assets/new
@@ -71,12 +106,61 @@ class ResourcesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    # def set_asset
-    #       @asset = Asset.find(params[:id])
-    #     end
+  
+    def conditions
 
-    # Never trust parameters from the scary internet, only allow the white list through.
+      c = Array.new
+      c << [ "oid = ?", params[:oid] ] if params[:oid].present?
+      c << [ "year = ?", params[:year] ] if params[:year].present?
+      c << [ "make = ?", params[:make] ] if params[:make].present?
+      
+      return c
+    end
+    
+    #NOPE WRONG-O
+    # def conditions2 
+    #       
+    #       allowedKeys = [
+    #         "oid",
+    #         "objecttype"
+    #       ]
+    #       
+    #       conditions = ['']
+    #     
+    #       #conditionalKeys = ""
+    #       
+    #       conditionalValues = []
+    #       
+    #       customParams = params.clone
+    #       
+    #       customParams.delete("controller")
+    #       
+    #       customParams.delete("action")
+    #       
+    #       downCounter = customParams.length
+    #       
+    #       upCounter = 0
+    #       
+    #       params.each do |key,value|
+    #         
+    #         if allowedKeys.include? key
+    #           
+    #           #Put the 
+    #           downCounter -= 1
+    #           conditions[0] << key + "=? "
+    #           conditions[0] << "AND " if downCounter > 0
+    #           
+    #           #Populate 
+    #           upCounter + -1
+    #           conditions << value
+    #         end
+    #       end
+    #       
+    #       return conditions
+    #       
+    #       return ["oid=? AND objecttype=?", "45", "warningText"]
+    #     end
+    
     def resource_params
       params.require(:resource).permit(:oid, :retrievalURL, :activeFrom, :activeTo, :objectType, :eventType, :description, :lang, :license, :length, :mimeType)
     end
