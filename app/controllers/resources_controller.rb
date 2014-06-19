@@ -9,7 +9,7 @@ class ResourcesController < ApplicationController
     @assets = @assets.objectTypeTest(params[:objecttype]) if params[:objecttype].present?
     @assets = @assets.eventTypeTest(params[:eventtype]) if params[:eventtype].present?
     @assets = @assets.langTypeTest(params[:lang]) if params[:lang].present?
-    @assets = @assets.searchDescription(params[:contains]) if params[:contains].present?
+    @assets = @assets.searchDescription(params[:search]) if params[:search].present?
     @assets = @assets.isActive() unless params[:showinactive] == 'true'
     
     respond_to do |format|

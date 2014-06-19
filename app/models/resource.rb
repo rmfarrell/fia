@@ -2,11 +2,11 @@ class Resource < ActiveRecord::Base
   
   scope :oidTest, -> (oid) { where oid: oid }
   scope :urlTest, -> (retrievalurl) { where retrievalURL: retrievalurl }
-  scope :objectTypeTest, -> (objecttype) { where objectType: objecttype}
+  scope :objectTypeTest, -> (objecttype) {where('objectType=? OR objectType=?', objecttype, 'any')}
   scope :langTypeTest, -> (lang) { where('lang=? OR lang=?', 'any', lang) }
   #scope :search, -> (search) {where description: search}
-  scope :searchDescription, -> (contains) { where("description like ?", "%#{contains}%".downcase)}
-  scope :eventTypeTest, -> (eventtype) {where('eventtype=? OR eventtype=?', eventtype, 'any')}
+  scope :searchDescription, -> (search) { where("description LIKE ?", "%#{search}%".downcase)}
+  scope :eventTypeTest, -> (eventtype) {where('eventType=? OR eventType=?', eventtype, 'any')}
   scope :isActive, -> () { where activeTo: '9999-12-31'}
   
   # scope :status, -> (status) { where status: status }
