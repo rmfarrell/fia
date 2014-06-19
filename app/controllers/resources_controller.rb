@@ -3,14 +3,13 @@ class ResourcesController < ApplicationController
   #before_action :set_asset, only: [:show, :edit, :update, :destroy]
   
   def index
-    
     @assets = Resource.where(nil)
     @assets = @assets.oidTest(params[:oid]) if params[:oid].present?
     @assets = @assets.urlTest(params[:retrievalurl]) if params[:retrievalurl].present?
     @assets = @assets.objectTypeTest(params[:objecttype]) if params[:objecttype].present?
     @assets = @assets.eventTypeTest(params[:eventtype]) if params[:eventtype].present?
-    @assets = @assets.langTypeTest(params[:language]) if params[:language].present?
-    @assets = @assets.searchDescription(params[:search]) if params[:search].present?
+    @assets = @assets.langTypeTest(params[:lang]) if params[:lang].present?
+    @assets = @assets.searchDescription(params[:contains]) if params[:contains].present?
     @assets = @assets.isActive() unless params[:showinactive] == 'true'
     
     respond_to do |format|

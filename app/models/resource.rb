@@ -3,9 +3,9 @@ class Resource < ActiveRecord::Base
   scope :oidTest, -> (oid) { where oid: oid }
   scope :urlTest, -> (retrievalurl) { where retrievalURL: retrievalurl }
   scope :objectTypeTest, -> (objecttype) { where objectType: objecttype}
-  scope :langTypeTest, -> (language) { where lang: language}
+  scope :langTypeTest, -> (lang) { where('lang=? OR lang=?', 'any', lang) }
   #scope :search, -> (search) {where description: search}
-  scope :searchDescription, -> (search) { where("description like ?", "%#{search}%".downcase)}
+  scope :searchDescription, -> (contains) { where("description like ?", "%#{contains}%".downcase)}
   scope :eventTypeTest, -> (eventtype) {where('eventtype=? OR eventtype=?', eventtype, 'any')}
   scope :isActive, -> () { where activeTo: '9999-12-31'}
   
@@ -20,6 +20,8 @@ class Resource < ActiveRecord::Base
   def self.find_all_by_name(name)
     find(:all, :conditions => ["LOWER(name) = ?", name.downcase])
   end
+  
+  private
   
   # def self.search(params)
   #   # Resource.where(oid: params[:oid]) if params.has_key?(:oid)
