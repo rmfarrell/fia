@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140608000637) do
+ActiveRecord::Schema.define(version: 20140619212824) do
 
   create_table "resources", force: true do |t|
     t.string   "oid"
@@ -28,5 +28,10 @@ ActiveRecord::Schema.define(version: 20140608000637) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "resources", ["activeTo"], name: "index_resources_on_activeTo"
+  add_index "resources", ["eventType"], name: "index_resources_on_eventType"
+  add_index "resources", ["lang"], name: "index_resources_on_lang"
+  add_index "resources", ["objectType"], name: "index_resources_on_objectType"
 
 end
