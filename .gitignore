@@ -1,3 +1,7 @@
 db/development.sqlite3
-tmp/cache
+tmp/
 database.db
+.bundle
+db/*.sqlite3
+log/*.log
+.DS_Store
