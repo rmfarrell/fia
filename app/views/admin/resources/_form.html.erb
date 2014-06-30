@@ -56,6 +56,18 @@
     <%= f.label :mimeType %><br>
     <%= f.text_field :mimeType, :placeholder => 'image/svg', :class => 'form-control' %>
   </div>
+  <div class="field form-group">
+    <%= f.label "Contributor Name" %><br>
+    <%= f.text_field :contributorName, :class => 'form-control' %>
+  </div>
+	<div class="field form-group">
+    <%= f.label "Contributor Email" %><br>
+    <%= f.text_field :contributorEmail, :type => 'email', :class => 'form-control' %>
+  </div>
+	<div class="field form-group">
+    <%= f.label "Use Constraints" %><br>
+    <%= f.text_field :useConstraints, :value => 'none', :class => 'form-control' %>
+  </div>
   <div class="actions form-group">
     <%= f.submit 'Update', :class => 'btn btn-default' %>
   </div>

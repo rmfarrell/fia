@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140619212824) do
+ActiveRecord::Schema.define(version: 20140630011059) do
 
   create_table "resources", force: true do |t|
     t.string   "oid"
@@ -27,6 +27,9 @@ ActiveRecord::Schema.define(version: 20140619212824) do
     t.string   "mimeType"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "contributorName"
+    t.string   "contributorEmail"
+    t.string   "useConstraints"
   end
 
   add_index "resources", ["activeTo"], name: "index_resources_on_activeTo"

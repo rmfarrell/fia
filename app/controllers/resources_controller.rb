@@ -150,6 +150,6 @@ class ResourcesController < ApplicationController
     #     end
     
     def resource_params
-      params.require(:resource).permit(:oid, :retrievalURL, :activeFrom, :activeTo, :objectType, :eventType, :description, :lang, :license, :length, :mimeType)
+      params.require(:resource).permit(:oid, :retrievalURL, :activeFrom, :activeTo, :objectType, :eventType, :description, :lang, :license, :length, :mimeType, :contributorName, :contributorEmail, :useConstraints)
     end
 end

@@ -57,6 +57,22 @@
 			  <strong>Mimetype:</strong>
 			  <%= @asset.mimeType %>
 			</p>
+
+			<p>
+			  <strong>Contributor Name:</strong>
+			  <%= @asset.contributorName %>
+			</p>
+			
+
+			<p>
+			  <strong>Contributor Email:</strong>
+			  <%= @asset.contributorEmail %>
+			</p>
+		
+			<p>
+			  <strong>Use Constraints:</strong>
+			  <%= @asset.useConstraints %>
+			</p>
 		</div>
 		<div class="buttons-container">
 			<%= link_to 'List', admin_resources_path, :class => 'glyphicon glyphicon-list back-btn' %>
